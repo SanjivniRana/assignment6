@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment6.Web", "Assignment6.Web\Assignment6.Web.csproj", "{BEFC6538-3B39-4210-BC74-C6015C59BC5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment6.Data", "Assignment6.Data\Assignment6.Data.csproj", "{52902344-DF29-4C86-B2BE-B455367A5AD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment6.Services", "Assignment6.Services\Assignment6.Services.csproj", "{6F071B23-3C3D-40D4-B35B-6627A73B6334}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEFC6538-3B39-4210-BC74-C6015C59BC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEFC6538-3B39-4210-BC74-C6015C59BC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEFC6538-3B39-4210-BC74-C6015C59BC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEFC6538-3B39-4210-BC74-C6015C59BC5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52902344-DF29-4C86-B2BE-B455367A5AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52902344-DF29-4C86-B2BE-B455367A5AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52902344-DF29-4C86-B2BE-B455367A5AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52902344-DF29-4C86-B2BE-B455367A5AD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F071B23-3C3D-40D4-B35B-6627A73B6334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F071B23-3C3D-40D4-B35B-6627A73B6334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F071B23-3C3D-40D4-B35B-6627A73B6334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F071B23-3C3D-40D4-B35B-6627A73B6334}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

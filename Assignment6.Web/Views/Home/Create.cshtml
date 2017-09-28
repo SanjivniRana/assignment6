@@ -1,0 +1,121 @@
+﻿
+@model Assignment6.Data.Entity_Models.Employee1
+
+@{
+    ViewBag.Title = "Employee Portal";
+}
+
+<style>
+    .head {
+        text-align: center;
+    }
+
+    .form-horizontal {
+        display: inline-block;
+        text-align: center;
+    }
+    div{
+        text-align: center;
+    }
+    .form-control{
+        width: 300px;
+    }
+
+</style>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+<body>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h1>  </h1>
+            <h1> </h1>
+
+            <h2 class="head">Employee Portal</h2>
+
+            <h1>  </h1>
+            <h1> </h1>
+            <hr />
+            <h1>  </h1>
+            <h1> </h1>
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.EName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.EName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.EName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.MaritalStatus, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="Checkbox">
+
+                    @Html.CheckBoxFor(model => model.MaritalStatus, new { htmlAttributes = new { @class = "form-control" } }):Married
+                    @Html.ValidationMessageFor(model => model.MaritalStatus, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="Checkbox">
+
+                    @Html.CheckBoxFor(model => model.MaritalStatus, new { htmlAttributes = new { @class = "form-control" } }):Unmarried
+                    @Html.ValidationMessageFor(model => model.MaritalStatus, "", new { @class = "text-danger" })
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.State, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.State, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.State)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.City, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.City)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Add Employee" class="btn btn-default" />
+                    <input type="reset" value="Reset" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+</body>
+</html>
+
+
+
